@@ -35,7 +35,7 @@
             --radius: 16px;
         }
 
-        html { font-size: 16px; }
+        html { font-size: 19px; }
 
         body {
             font-family: 'Inter', -apple-system, sans-serif;
@@ -62,7 +62,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 60px 80px;
+            padding: 40px 60px;
             opacity: 0;
             pointer-events: none;
             overflow-y: auto;
@@ -120,7 +120,7 @@
            TYPOGRAPHY — Large, high contrast
         ═══════════════════════════════════════════ */
         .mega-title {
-            font-size: clamp(2.8rem, 5.5vw, 5rem);
+            font-size: clamp(3.2rem, 6vw, 5.5rem);
             font-weight: 900;
             line-height: 1.1;
             letter-spacing: -0.03em;
@@ -137,7 +137,7 @@
         }
 
         .slide-title {
-            font-size: clamp(2rem, 4vw, 3.2rem);
+            font-size: clamp(2.4rem, 4.5vw, 3.6rem);
             font-weight: 800;
             line-height: 1.15;
             letter-spacing: -0.02em;
@@ -146,23 +146,23 @@
         }
 
         .slide-subtitle {
-            font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+            font-size: clamp(1.15rem, 1.8vw, 1.45rem);
             color: var(--text-secondary);
             font-weight: 400;
-            line-height: 1.6;
-            max-width: 750px;
+            line-height: 1.55;
+            max-width: 900px;
             text-align: center;
         }
 
         .tag {
             display: inline-block;
-            padding: 6px 18px;
+            padding: 8px 22px;
             border-radius: 100px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 700;
             letter-spacing: 0.05em;
             text-transform: uppercase;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
 
         .tag--purple { background: #ede9fe; color: var(--accent-purple); }
@@ -177,24 +177,24 @@
         ═══════════════════════════════════════════ */
         .content-wrapper {
             width: 100%;
-            max-width: 1100px;
+            max-width: 1400px;
         }
 
         .two-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 32px;
+            gap: 28px;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1400px;
             align-items: start;
         }
 
         .three-col {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 24px;
+            gap: 22px;
             width: 100%;
-            max-width: 1100px;
+            max-width: 1400px;
         }
 
         /* Cards — high contrast */
@@ -220,24 +220,24 @@
         }
 
         .card__title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 800;
             margin-bottom: 8px;
             color: var(--text-primary);
         }
 
         .card__text {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
-            line-height: 1.65;
+            line-height: 1.55;
         }
 
         /* Prompt box — very readable */
         .prompt-box {
             border-radius: var(--radius);
-            padding: 28px 32px;
-            font-size: 1rem;
-            line-height: 1.75;
+            padding: 24px 28px;
+            font-size: 1.05rem;
+            line-height: 1.65;
             color: var(--text-primary);
             position: relative;
             margin-top: 18px;
@@ -250,7 +250,7 @@
             top: -12px;
             left: 20px;
             padding: 2px 14px;
-            font-size: 0.72rem;
+            font-size: 0.8rem;
             font-weight: 800;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -299,8 +299,8 @@
             display: flex;
             align-items: flex-start;
             gap: 12px;
-            font-size: 1rem;
-            line-height: 1.55;
+            font-size: 1.1rem;
+            line-height: 1.5;
             color: var(--text-secondary);
         }
 
@@ -337,11 +337,11 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.04);
         }
 
-        .flow__step-icon { font-size: 2rem; }
-        .flow__step-label { font-size: 0.85rem; font-weight: 700; text-align: center; color: var(--text-primary); }
+        .flow__step-icon { font-size: 2.4rem; }
+        .flow__step-label { font-size: 1rem; font-weight: 700; text-align: center; color: var(--text-primary); }
 
         .flow__arrow {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             color: var(--text-muted);
             font-weight: 700;
         }
@@ -351,9 +351,9 @@
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 5px 16px;
+            padding: 6px 20px;
             border-radius: 100px;
-            font-size: 0.8rem;
+            font-size: 0.95rem;
             font-weight: 800;
             letter-spacing: 0.05em;
         }
@@ -372,9 +372,9 @@
         }
 
         .highlight-box p {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
             color: var(--text-secondary);
-            line-height: 1.65;
+            line-height: 1.55;
         }
 
         /* ═══════════════════════════════════════════
@@ -428,7 +428,7 @@
             bottom: 38px;
             left: 40px;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 1rem;
             color: var(--text-muted);
             font-weight: 600;
             z-index: 100;
@@ -487,17 +487,17 @@
         /* Mini grid for examples */
         .mini-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
             gap: 14px;
             width: 100%;
-            max-width: 900px;
+            max-width: 1200px;
         }
 
         .mini-card {
             background: #ffffff;
             border: 2px solid var(--border);
             border-radius: 12px;
-            padding: 18px 14px;
+            padding: 16px 12px;
             text-align: center;
             transition: all 0.3s;
             box-shadow: 0 1px 3px rgba(0,0,0,0.03);
@@ -509,8 +509,8 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.06);
         }
 
-        .mini-card__icon { font-size: 1.8rem; margin-bottom: 6px; }
-        .mini-card__label { font-size: 0.82rem; font-weight: 700; color: var(--text-secondary); }
+        .mini-card__icon { font-size: 2rem; margin-bottom: 6px; }
+        .mini-card__label { font-size: 0.9rem; font-weight: 700; color: var(--text-secondary); }
 
         /* Helpers */
         .centered {
@@ -526,7 +526,7 @@
         .mt-32 { margin-top: 32px; }
         .mb-8 { margin-bottom: 8px; }
         .mb-16 { margin-bottom: 16px; }
-        .w-full { width: 100%; max-width: 1100px; }
+        .w-full { width: 100%; max-width: 1400px; }
 
         /* Compare boxes for info design slide */
         .compare-row {
@@ -534,14 +534,14 @@
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             width: 100%;
-            max-width: 700px;
+            max-width: 900px;
             margin-top: 16px;
         }
         .compare-box {
             padding: 20px 24px;
             border-radius: 14px;
-            font-size: 0.9rem;
-            line-height: 1.65;
+            font-size: 1rem;
+            line-height: 1.55;
         }
         .compare-box.bad {
             background: #fef2f2;
@@ -996,7 +996,7 @@
          SLIDE 6 — PROJEKT 1: HYPOTEČNÍ KALKULAČKA
     ═══════════════════════════════════════════════════ -->
     <section class="slide slide--green">
-        <div class="content-wrapper" style="max-width:900px;">
+        <div class="content-wrapper" style="max-width:1200px;">
             <div class="centered">
                 <span class="tag tag--green fade-in">Praktická část</span>
                 <h2 class="slide-title fade-in-delay-1">🏠 Projekt 1: Hypoteční kalkulačka</h2>
@@ -1037,7 +1037,7 @@
          SLIDE — PROJEKT 2: VÝUKOVÝ MATERIÁL
     ═══════════════════════════════════════════════════ -->
     <section class="slide slide--orange">
-        <div class="content-wrapper" style="max-width:900px;">
+        <div class="content-wrapper" style="max-width:1200px;">
             <div class="centered">
                 <span class="tag tag--orange fade-in">Praktická část</span>
                 <h2 class="slide-title fade-in-delay-1">📚 Projekt 2: Výukový materiál</h2>
@@ -1078,7 +1078,7 @@
          SLIDE 8 — PROJEKT 3: TO-DO LIST
     ═══════════════════════════════════════════════════ -->
     <section class="slide slide--blue">
-        <div class="content-wrapper" style="max-width:900px;">
+        <div class="content-wrapper" style="max-width:1200px;">
             <div class="centered">
                 <span class="tag tag--blue fade-in">Praktická část</span>
                 <h2 class="slide-title fade-in-delay-1">✅ Projekt 3: TO-DO List</h2>
@@ -1119,7 +1119,7 @@
          SLIDE 9 — PROJEKT 4: LANDING PAGE
     ═══════════════════════════════════════════════════ -->
     <section class="slide slide--pink">
-        <div class="content-wrapper" style="max-width:900px;">
+        <div class="content-wrapper" style="max-width:1200px;">
             <div class="centered">
                 <span class="tag tag--pink fade-in">Praktická část</span>
                 <h2 class="slide-title fade-in-delay-1">🌐 Projekt 4: Landing Page</h2>
